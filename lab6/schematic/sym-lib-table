@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name isim)(type Legacy)(uri /home/wsh32/2019f/isim/isim.lib)(options "")(descr ""))
+)
