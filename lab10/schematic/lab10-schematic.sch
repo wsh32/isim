@@ -113,21 +113,10 @@ Wire Wire Line
 	3150 5250 3150 5150
 Wire Wire Line
 	3150 5150 3500 5150
-$Comp
-L Device:R_Small_US R1
-U 1 1 5DCA384B
-P 2800 4950
-F 0 "R1" V 2700 4950 50  0000 C CNN
-F 1 "6" V 2900 4950 50  0000 C CNN
-F 2 "" H 2800 4950 50  0001 C CNN
-F 3 "~" H 2800 4950 50  0001 C CNN
-	1    2800 4950
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	2700 4950 2300 4950
+	2650 4950 2300 4950
 Wire Wire Line
-	2900 4950 2950 4950
+	2850 4950 2950 4950
 $Comp
 L Device:C_Small C1
 U 1 1 5DCA8BB7
@@ -153,10 +142,10 @@ F 3 "~" H 3750 4550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R2
+L Device:R_Small_US R3
 U 1 1 5DCB79EB
 P 3750 4250
-F 0 "R2" V 3650 4250 50  0000 C CNN
+F 0 "R3" V 3650 4250 50  0000 C CNN
 F 1 "200" V 3850 4250 50  0000 C CNN
 F 2 "" H 3750 4250 50  0001 C CNN
 F 3 "~" H 3750 4250 50  0001 C CNN
@@ -187,7 +176,7 @@ Connection ~ 4200 4550
 Wire Wire Line
 	4200 4550 4200 5050
 Text Notes 3100 4000 0    50   ~ 0
-Band Pass Filter\nCutoff Frequencies: 20kHz, 79kHz\nAmplification Gain: 33.33
+Band Pass Filter\nCutoff Frequencies: 26kHz, 79kHz\nAmplification Gain: 33.33
 $Comp
 L Amplifier_Operational:OP249 U3
 U 1 1 5DCD1B22
@@ -203,19 +192,8 @@ Wire Wire Line
 	5050 5350 5050 5250
 Wire Wire Line
 	5050 5250 5400 5250
-$Comp
-L Device:R_Small_US R3
-U 1 1 5DCD1B30
-P 4700 5050
-F 0 "R3" V 4600 5050 50  0000 C CNN
-F 1 "6" V 4800 5050 50  0000 C CNN
-F 2 "" H 4700 5050 50  0001 C CNN
-F 3 "~" H 4700 5050 50  0001 C CNN
-	1    4700 5050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	4800 5050 4850 5050
+	4750 5050 4850 5050
 $Comp
 L Device:C_Small C3
 U 1 1 5DCD1B38
@@ -241,10 +219,10 @@ F 3 "~" H 5650 4650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R4
+L Device:R_Small_US R6
 U 1 1 5DCD1B45
 P 5650 4350
-F 0 "R4" V 5550 4350 50  0000 C CNN
+F 0 "R6" V 5550 4350 50  0000 C CNN
 F 1 "200" V 5750 4350 50  0000 C CNN
 F 2 "" H 5650 4350 50  0001 C CNN
 F 3 "~" H 5650 4350 50  0001 C CNN
@@ -275,9 +253,9 @@ Connection ~ 6100 4650
 Wire Wire Line
 	6100 4650 6100 5150
 Text Notes 5000 4100 0    50   ~ 0
-Band Pass Filter\nCutoff Frequencies: 20kHz, 79kHz\nAmplification Gain: 33.33
+Band Pass Filter\nCutoff Frequencies: 26kHz, 79kHz\nAmplification Gain: 33.33
 Wire Wire Line
-	4600 5050 4200 5050
+	4550 5050 4200 5050
 $Comp
 L Connector:Conn_01x01_Female J4
 U 1 1 5DCE132A
@@ -295,25 +273,92 @@ Connection ~ 6100 5150
 Text Notes 2300 2100 0    50   ~ 0
 Inputs from Wavegen\nInput 1: 40kHz @50% duty cycle\nInput 2: 20Hz @2% duty cycle
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5DC9953C
+L power:+2V5 #PWR02
+U 1 1 5DC9CF93
 P 3150 5250
-F 0 "#PWR?" H 3150 5100 50  0001 C CNN
-F 1 "+3V3" H 3165 5423 50  0000 C CNN
+F 0 "#PWR02" H 3150 5100 50  0001 C CNN
+F 1 "+2V5" H 3165 5423 50  0000 C CNN
 F 2 "" H 3150 5250 50  0001 C CNN
 F 3 "" H 3150 5250 50  0001 C CNN
 	1    3150 5250
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5DC9CA6A
+L power:+2V5 #PWR04
+U 1 1 5DC9D7E1
 P 5050 5350
-F 0 "#PWR?" H 5050 5200 50  0001 C CNN
-F 1 "+3V3" H 5065 5523 50  0000 C CNN
+F 0 "#PWR04" H 5050 5200 50  0001 C CNN
+F 1 "+2V5" H 5065 5523 50  0000 C CNN
 F 2 "" H 5050 5350 50  0001 C CNN
 F 3 "" H 5050 5350 50  0001 C CNN
 	1    5050 5350
 	-1   0    0    1   
 $EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 5DCA4F45
+P 2750 5100
+F 0 "R2" V 2650 5100 50  0000 C CNN
+F 1 "12.1" V 2850 5100 50  0000 C CNN
+F 2 "" H 2750 5100 50  0001 C CNN
+F 3 "~" H 2750 5100 50  0001 C CNN
+	1    2750 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 5DCA5505
+P 2750 4800
+F 0 "R1" V 2650 4800 50  0000 C CNN
+F 1 "11.8" V 2850 4800 50  0000 C CNN
+F 2 "" H 2750 4800 50  0001 C CNN
+F 3 "~" H 2750 4800 50  0001 C CNN
+	1    2750 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 4800 2650 4950
+Connection ~ 2650 4950
+Wire Wire Line
+	2650 4950 2650 5100
+Wire Wire Line
+	2850 4800 2850 4950
+Connection ~ 2850 4950
+Wire Wire Line
+	2850 4950 2850 5100
+Connection ~ 4200 5050
+$Comp
+L Device:R_Small_US R5
+U 1 1 5DCA9F16
+P 4650 5200
+F 0 "R5" V 4550 5200 50  0000 C CNN
+F 1 "12.1" V 4750 5200 50  0000 C CNN
+F 2 "" H 4650 5200 50  0001 C CNN
+F 3 "~" H 4650 5200 50  0001 C CNN
+	1    4650 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R4
+U 1 1 5DCAA376
+P 4650 4900
+F 0 "R4" V 4550 4900 50  0000 C CNN
+F 1 "11.8" V 4750 4900 50  0000 C CNN
+F 2 "" H 4650 4900 50  0001 C CNN
+F 3 "~" H 4650 4900 50  0001 C CNN
+	1    4650 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 4900 4550 5050
+Connection ~ 4550 5050
+Wire Wire Line
+	4550 5050 4550 5200
+Wire Wire Line
+	4750 5200 4750 5050
+Connection ~ 4750 5050
+Wire Wire Line
+	4750 5050 4750 4900
+Text Notes 3100 5900 0    50   ~ 0
+No 6 ohm resistors available, 11.8 ohm\nand 12.1 ohm in parallel is 5.974 ohm
 $EndSCHEMATC
