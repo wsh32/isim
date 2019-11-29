@@ -1,0 +1,643 @@
+EESchema Schematic File Version 4
+LIBS:lab9_schematic-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 5DE01855
+P 2800 1800
+F 0 "J?" H 2900 2000 50  0000 C CNN
+F 1 "SCALE" H 2900 1500 50  0000 C CNN
+F 2 "" H 2800 1800 50  0001 C CNN
+F 3 "~" H 2800 1800 50  0001 C CNN
+	1    2800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+2V5 #PWR?
+U 1 1 5DE02746
+P 3250 1600
+F 0 "#PWR?" H 3250 1450 50  0001 C CNN
+F 1 "+2V5" H 3265 1773 50  0000 C CNN
+F 2 "" H 3250 1600 50  0001 C CNN
+F 3 "" H 3250 1600 50  0001 C CNN
+	1    3250 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE02AD5
+P 3250 2300
+F 0 "#PWR?" H 3250 2050 50  0001 C CNN
+F 1 "GND" H 3255 2127 50  0000 C CNN
+F 2 "" H 3250 2300 50  0001 C CNN
+F 3 "" H 3250 2300 50  0001 C CNN
+	1    3250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2300 3250 2000
+Wire Wire Line
+	3250 2000 3000 2000
+Wire Wire Line
+	3000 1700 3250 1700
+Wire Wire Line
+	3250 1700 3250 1600
+$Comp
+L Device:R_Small R?
+U 1 1 5DE03F01
+P 3450 1800
+F 0 "R?" V 3350 1800 50  0000 C CNN
+F 1 "2K" V 3450 1800 50  0000 C CNN
+F 2 "" H 3450 1800 50  0001 C CNN
+F 3 "~" H 3450 1800 50  0001 C CNN
+	1    3450 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DE0432D
+P 3450 1900
+F 0 "R?" V 3350 1900 50  0000 C CNN
+F 1 "2K" V 3450 1900 50  0000 C CNN
+F 2 "" H 3450 1900 50  0001 C CNN
+F 3 "~" H 3450 1900 50  0001 C CNN
+	1    3450 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 1800 3000 1800
+Wire Wire Line
+	3000 1900 3350 1900
+$Comp
+L lab9_schematic-rescue:AD623-isim U?
+U 1 1 5DE056DD
+P 5450 1850
+F 0 "U?" H 5250 2150 50  0000 C CNN
+F 1 "AD623" H 5600 1550 50  0000 C CNN
+F 2 "" H 5450 1850 50  0001 C CNN
+F 3 "" H 5450 1850 50  0001 C CNN
+	1    5450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DE066AF
+P 5450 1450
+F 0 "R?" V 5350 1450 50  0000 C CNN
+F 1 "1K" V 5450 1450 50  0000 C CNN
+F 2 "" H 5450 1450 50  0001 C CNN
+F 3 "~" H 5450 1450 50  0001 C CNN
+	1    5450 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 1450 5050 1450
+Wire Wire Line
+	5050 1450 5050 1700
+Wire Wire Line
+	5050 1700 5100 1700
+Wire Wire Line
+	5550 1450 5850 1450
+Wire Wire Line
+	5850 1450 5850 1700
+Wire Wire Line
+	5850 1700 5800 1700
+$Comp
+L Device:C_Small C?
+U 1 1 5DE09775
+P 3650 2100
+F 0 "C?" H 3742 2146 50  0000 L CNN
+F 1 "1nF" H 3742 2055 50  0000 L CNN
+F 2 "" H 3650 2100 50  0001 C CNN
+F 3 "~" H 3650 2100 50  0001 C CNN
+	1    3650 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1800 3650 1800
+$Comp
+L Device:C_Small C?
+U 1 1 5DE0BBE3
+P 3950 2100
+F 0 "C?" H 4042 2146 50  0000 L CNN
+F 1 "1nF" H 4042 2055 50  0000 L CNN
+F 2 "" H 3950 2100 50  0001 C CNN
+F 3 "~" H 3950 2100 50  0001 C CNN
+	1    3950 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2000 3650 1800
+Wire Wire Line
+	3950 2000 3950 1900
+Wire Wire Line
+	3550 1900 3950 1900
+$Comp
+L power:GND #PWR?
+U 1 1 5DE0F158
+P 3650 2300
+F 0 "#PWR?" H 3650 2050 50  0001 C CNN
+F 1 "GND" H 3655 2127 50  0000 C CNN
+F 2 "" H 3650 2300 50  0001 C CNN
+F 3 "" H 3650 2300 50  0001 C CNN
+	1    3650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE0F340
+P 3950 2300
+F 0 "#PWR?" H 3950 2050 50  0001 C CNN
+F 1 "GND" H 3955 2127 50  0000 C CNN
+F 2 "" H 3950 2300 50  0001 C CNN
+F 3 "" H 3950 2300 50  0001 C CNN
+	1    3950 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2200 3950 2300
+Wire Wire Line
+	3650 2300 3650 2200
+$Comp
+L Device:C_Small C?
+U 1 1 5DE1056A
+P 4400 1850
+F 0 "C?" H 4492 1896 50  0000 L CNN
+F 1 "10nF" H 4492 1805 50  0000 L CNN
+F 2 "" H 4400 1850 50  0001 C CNN
+F 3 "~" H 4400 1850 50  0001 C CNN
+	1    4400 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1800 4150 1800
+Wire Wire Line
+	4150 1800 4150 1650
+Wire Wire Line
+	4150 1650 4400 1650
+Wire Wire Line
+	4700 1650 4700 1800
+Wire Wire Line
+	4700 1800 5100 1800
+Connection ~ 3650 1800
+Wire Wire Line
+	4400 1750 4400 1650
+Connection ~ 4400 1650
+Wire Wire Line
+	4400 1650 4700 1650
+Wire Wire Line
+	3950 1900 4150 1900
+Wire Wire Line
+	4150 1900 4150 2050
+Wire Wire Line
+	4150 2050 4400 2050
+Wire Wire Line
+	4700 2050 4700 1900
+Wire Wire Line
+	4700 1900 5100 1900
+Connection ~ 3950 1900
+Wire Wire Line
+	4400 1950 4400 2050
+Connection ~ 4400 2050
+Wire Wire Line
+	4400 2050 4700 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5DE1C6E4
+P 5000 2300
+F 0 "#PWR?" H 5000 2050 50  0001 C CNN
+F 1 "GND" H 5005 2127 50  0000 C CNN
+F 2 "" H 5000 2300 50  0001 C CNN
+F 3 "" H 5000 2300 50  0001 C CNN
+	1    5000 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2300 5000 2000
+Wire Wire Line
+	5000 2000 5100 2000
+$Comp
+L power:+2V5 #PWR?
+U 1 1 5DE1D583
+P 5950 2300
+F 0 "#PWR?" H 5950 2150 50  0001 C CNN
+F 1 "+2V5" H 5965 2473 50  0000 C CNN
+F 2 "" H 5950 2300 50  0001 C CNN
+F 3 "" H 5950 2300 50  0001 C CNN
+	1    5950 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 2300 5950 2000
+Wire Wire Line
+	5950 2000 5800 2000
+$Comp
+L power:+5V #PWR?
+U 1 1 5DE1EA53
+P 5950 1350
+F 0 "#PWR?" H 5950 1200 50  0001 C CNN
+F 1 "+5V" H 5965 1523 50  0000 C CNN
+F 2 "" H 5950 1350 50  0001 C CNN
+F 3 "" H 5950 1350 50  0001 C CNN
+	1    5950 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1350 5950 1800
+Wire Wire Line
+	5950 1800 5800 1800
+Text GLabel 6100 1900 2    50   Input Italic 0
+AMP_OUT
+Wire Wire Line
+	5800 1900 6100 1900
+Text GLabel 2900 3400 0    50   Input Italic 0
+AMP_OUT
+$Comp
+L Device:R_Small R?
+U 1 1 5DE248CE
+P 3100 3400
+F 0 "R?" V 3000 3400 50  0000 C CNN
+F 1 "30K" V 3100 3400 50  0000 C CNN
+F 2 "" H 3100 3400 50  0001 C CNN
+F 3 "~" H 3100 3400 50  0001 C CNN
+	1    3100 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 3400 2900 3400
+$Comp
+L Device:C_Small C?
+U 1 1 5DE26521
+P 3400 3400
+F 0 "C?" V 3300 3400 50  0000 C CNN
+F 1 "10uF" V 3500 3400 50  0000 C CNN
+F 2 "" H 3400 3400 50  0001 C CNN
+F 3 "~" H 3400 3400 50  0001 C CNN
+	1    3400 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 3400 3300 3400
+$Comp
+L Amplifier_Operational:ADA4898-2 U?
+U 1 1 5DE28817
+P 4000 3500
+F 0 "U?" H 4100 3350 50  0000 C CNN
+F 1 "OPAMP" H 4150 3650 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm" H 3950 3200 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf" H 4000 3500 50  0001 C CNN
+	1    4000 3500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+2V5 #PWR?
+U 1 1 5DE2DF5C
+P 3600 3750
+F 0 "#PWR?" H 3600 3600 50  0001 C CNN
+F 1 "+2V5" H 3615 3923 50  0000 C CNN
+F 2 "" H 3600 3750 50  0001 C CNN
+F 3 "" H 3600 3750 50  0001 C CNN
+	1    3600 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 3750 3600 3600
+Wire Wire Line
+	3600 3600 3700 3600
+Wire Wire Line
+	3700 3400 3600 3400
+$Comp
+L Device:R_Small R?
+U 1 1 5DE32E1D
+P 4000 3100
+F 0 "R?" V 4100 3100 50  0000 C CNN
+F 1 "1M" V 4000 3100 50  0000 C CNN
+F 2 "" H 4000 3100 50  0001 C CNN
+F 3 "~" H 4000 3100 50  0001 C CNN
+	1    4000 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DE338E1
+P 4000 2900
+F 0 "C?" V 3900 2900 50  0000 C CNN
+F 1 "10nF" V 4100 2900 50  0000 C CNN
+F 2 "" H 4000 2900 50  0001 C CNN
+F 3 "~" H 4000 2900 50  0001 C CNN
+	1    4000 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 3400 3600 3100
+Wire Wire Line
+	3600 2900 3900 2900
+Connection ~ 3600 3400
+Wire Wire Line
+	3600 3400 3500 3400
+Wire Wire Line
+	4100 2900 4400 2900
+Wire Wire Line
+	4400 2900 4400 3100
+Wire Wire Line
+	4400 3500 4300 3500
+Wire Wire Line
+	4100 3100 4400 3100
+Connection ~ 4400 3100
+Wire Wire Line
+	4400 3100 4400 3500
+Wire Wire Line
+	3900 3100 3600 3100
+Connection ~ 3600 3100
+Wire Wire Line
+	3600 3100 3600 2900
+$Comp
+L Device:R_Small R?
+U 1 1 5DE4692D
+P 4600 3500
+F 0 "R?" V 4500 3500 50  0000 C CNN
+F 1 "30K" V 4600 3500 50  0000 C CNN
+F 2 "" H 4600 3500 50  0001 C CNN
+F 3 "~" H 4600 3500 50  0001 C CNN
+	1    4600 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DE46934
+P 4900 3500
+F 0 "C?" V 4800 3500 50  0000 C CNN
+F 1 "10uF" V 5000 3500 50  0000 C CNN
+F 2 "" H 4900 3500 50  0001 C CNN
+F 3 "~" H 4900 3500 50  0001 C CNN
+	1    4900 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 3500 4800 3500
+$Comp
+L Amplifier_Operational:ADA4898-2 U?
+U 1 1 5DE4693B
+P 5500 3600
+F 0 "U?" H 5600 3450 50  0000 C CNN
+F 1 "OPAMP" H 5650 3750 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm" H 5450 3300 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf" H 5500 3600 50  0001 C CNN
+	1    5500 3600
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+2V5 #PWR?
+U 1 1 5DE46941
+P 5100 3850
+F 0 "#PWR?" H 5100 3700 50  0001 C CNN
+F 1 "+2V5" H 5115 4023 50  0000 C CNN
+F 2 "" H 5100 3850 50  0001 C CNN
+F 3 "" H 5100 3850 50  0001 C CNN
+	1    5100 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 3850 5100 3700
+Wire Wire Line
+	5100 3700 5200 3700
+Wire Wire Line
+	5200 3500 5100 3500
+$Comp
+L Device:R_Small R?
+U 1 1 5DE4694A
+P 5500 3200
+F 0 "R?" V 5600 3200 50  0000 C CNN
+F 1 "1M" V 5500 3200 50  0000 C CNN
+F 2 "" H 5500 3200 50  0001 C CNN
+F 3 "~" H 5500 3200 50  0001 C CNN
+	1    5500 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DE46950
+P 5500 3000
+F 0 "C?" V 5400 3000 50  0000 C CNN
+F 1 "10nF" V 5600 3000 50  0000 C CNN
+F 2 "" H 5500 3000 50  0001 C CNN
+F 3 "~" H 5500 3000 50  0001 C CNN
+	1    5500 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 3500 5100 3200
+Wire Wire Line
+	5100 3000 5400 3000
+Connection ~ 5100 3500
+Wire Wire Line
+	5100 3500 5000 3500
+Wire Wire Line
+	5600 3000 5900 3000
+Wire Wire Line
+	5900 3000 5900 3200
+Wire Wire Line
+	5900 3600 5800 3600
+Wire Wire Line
+	5600 3200 5900 3200
+Connection ~ 5900 3200
+Wire Wire Line
+	5900 3200 5900 3600
+Wire Wire Line
+	5400 3200 5100 3200
+Connection ~ 5100 3200
+Wire Wire Line
+	5100 3200 5100 3000
+Wire Wire Line
+	4400 3500 4500 3500
+Connection ~ 4400 3500
+Text GLabel 6100 3600 2    50   Input Italic 0
+FILTER_OUT
+Wire Wire Line
+	6100 3600 5900 3600
+Connection ~ 5900 3600
+Text GLabel 2900 4750 0    50   Input Italic 0
+FILTER_OUT
+$Comp
+L Device:R_Small R?
+U 1 1 5DE4F048
+P 3100 4750
+F 0 "R?" V 3000 4750 50  0000 C CNN
+F 1 "50K" V 3100 4750 50  0000 C CNN
+F 2 "" H 3100 4750 50  0001 C CNN
+F 3 "~" H 3100 4750 50  0001 C CNN
+	1    3100 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 4750 2900 4750
+$Comp
+L Device:R_Small R?
+U 1 1 5DE51078
+P 3500 4750
+F 0 "R?" V 3400 4750 50  0000 C CNN
+F 1 "50K" V 3500 4750 50  0000 C CNN
+F 2 "" H 3500 4750 50  0001 C CNN
+F 3 "~" H 3500 4750 50  0001 C CNN
+	1    3500 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 4750 3300 4750
+$Comp
+L Device:C_Small C?
+U 1 1 5DE54A15
+P 3750 4950
+F 0 "C?" H 3842 4996 50  0000 L CNN
+F 1 "1nF" H 3842 4905 50  0000 L CNN
+F 2 "" H 3750 4950 50  0001 C CNN
+F 3 "~" H 3750 4950 50  0001 C CNN
+	1    3750 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4850 3750 4750
+Wire Wire Line
+	3750 4750 3600 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5DE56B87
+P 3750 5100
+F 0 "#PWR?" H 3750 4850 50  0001 C CNN
+F 1 "GND" H 3755 4927 50  0000 C CNN
+F 2 "" H 3750 5100 50  0001 C CNN
+F 3 "" H 3750 5100 50  0001 C CNN
+	1    3750 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5100 3750 5050
+$Comp
+L Amplifier_Operational:ADA4898-2 U?
+U 1 1 5DE5C106
+P 4350 4650
+F 0 "U?" H 4450 4500 50  0000 C CNN
+F 1 "OPAMP" H 4500 4800 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm" H 4300 4350 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf" H 4350 4650 50  0001 C CNN
+	1    4350 4650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4050 4750 3750 4750
+Connection ~ 3750 4750
+Wire Wire Line
+	4650 4650 4900 4650
+Wire Wire Line
+	4900 4650 4900 4300
+Wire Wire Line
+	4900 4300 3950 4300
+Wire Wire Line
+	3950 4300 3950 4550
+Wire Wire Line
+	3950 4550 4050 4550
+$Comp
+L Device:C_Small C?
+U 1 1 5DE696C5
+P 4200 5450
+F 0 "C?" V 4100 5450 50  0000 C CNN
+F 1 "1uF" V 4300 5450 50  0000 C CNN
+F 2 "" H 4200 5450 50  0001 C CNN
+F 3 "~" H 4200 5450 50  0001 C CNN
+	1    4200 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 5450 4900 5450
+Wire Wire Line
+	4900 5450 4900 4650
+Connection ~ 4900 4650
+Wire Wire Line
+	4100 5450 3300 5450
+Wire Wire Line
+	3300 5450 3300 4750
+Connection ~ 3300 4750
+Wire Wire Line
+	3300 4750 3200 4750
+$Comp
+L Amplifier_Operational:ADA4898-2 U?
+U 1 1 5DE78939
+P 5550 4750
+F 0 "U?" H 5650 4600 50  0000 C CNN
+F 1 "OPAMP" H 5700 4900 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm" H 5500 4450 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf" H 5550 4750 50  0001 C CNN
+	1    5550 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4650 4900 4650
+$Comp
+L Device:R_Small R?
+U 1 1 5DE7D183
+P 6050 4950
+F 0 "R?" V 5950 4950 50  0000 C CNN
+F 1 "4K" V 6050 4950 50  0000 C CNN
+F 2 "" H 6050 4950 50  0001 C CNN
+F 3 "~" H 6050 4950 50  0001 C CNN
+	1    6050 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4850 6050 4750
+Wire Wire Line
+	6050 4750 5850 4750
+$Comp
+L Device:R_Small R?
+U 1 1 5DE80EEA
+P 6050 5350
+F 0 "R?" V 5950 5350 50  0000 C CNN
+F 1 "1K" V 6050 5350 50  0000 C CNN
+F 2 "" H 6050 5350 50  0001 C CNN
+F 3 "~" H 6050 5350 50  0001 C CNN
+	1    6050 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 5250 6050 5150
+Wire Wire Line
+	6050 5150 5150 5150
+Wire Wire Line
+	5150 5150 5150 4850
+Wire Wire Line
+	5150 4850 5250 4850
+Connection ~ 6050 5150
+Wire Wire Line
+	6050 5150 6050 5050
+$Comp
+L power:+2V5 #PWR?
+U 1 1 5DE88EEA
+P 6050 5600
+F 0 "#PWR?" H 6050 5450 50  0001 C CNN
+F 1 "+2V5" H 6065 5773 50  0000 C CNN
+F 2 "" H 6050 5600 50  0001 C CNN
+F 3 "" H 6050 5600 50  0001 C CNN
+	1    6050 5600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 5600 6050 5450
+Text GLabel 6300 4750 2    50   Input Italic 0
+OUTPUT
+Wire Wire Line
+	6300 4750 6050 4750
+Connection ~ 6050 4750
+$EndSCHEMATC
