@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:final_project_schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -18,10 +19,10 @@ RED_CURRENT
 Wire Wire Line
 	4650 2600 4850 2600
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R4
 U 1 1 5E47CFED
 P 4950 2600
-F 0 "R?" V 4850 2600 50  0000 C CNN
+F 0 "R4" V 4850 2600 50  0000 C CNN
 F 1 "1M" V 5050 2600 50  0000 C CNN
 F 2 "" H 4950 2600 50  0001 C CNN
 F 3 "~" H 4950 2600 50  0001 C CNN
@@ -34,8 +35,8 @@ U 1 1 5E481FE1
 P 5700 2700
 AR Path="/5E481FE1" Ref="U?"  Part="1" 
 AR Path="/5E40D9B5/5E481FE1" Ref="U?"  Part="1" 
-AR Path="/5E46A20A/5E481FE1" Ref="U?"  Part="1" 
-F 0 "U?" H 5750 2550 50  0000 C CNN
+AR Path="/5E46A20A/5E481FE1" Ref="U1"  Part="1" 
+F 0 "U1" H 5750 2550 50  0000 C CNN
 F 1 "LMC6484" H 5850 2850 50  0000 C CNN
 F 2 "" H 5700 2700 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf" H 5700 2700 50  0001 C CNN
@@ -64,10 +65,10 @@ GREEN_CURRENT
 Wire Wire Line
 	4650 3600 4850 3600
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R5
 U 1 1 5E4941C0
 P 4950 3600
-F 0 "R?" V 4850 3600 50  0000 C CNN
+F 0 "R5" V 4850 3600 50  0000 C CNN
 F 1 "1M" V 5050 3600 50  0000 C CNN
 F 2 "" H 4950 3600 50  0001 C CNN
 F 3 "~" H 4950 3600 50  0001 C CNN
@@ -80,8 +81,8 @@ U 1 1 5E4941C6
 P 5700 3700
 AR Path="/5E4941C6" Ref="U?"  Part="1" 
 AR Path="/5E40D9B5/5E4941C6" Ref="U?"  Part="1" 
-AR Path="/5E46A20A/5E4941C6" Ref="U?"  Part="1" 
-F 0 "U?" H 5750 3550 50  0000 C CNN
+AR Path="/5E46A20A/5E4941C6" Ref="U2"  Part="1" 
+F 0 "U2" H 5750 3550 50  0000 C CNN
 F 1 "LMC6484" H 5850 3850 50  0000 C CNN
 F 2 "" H 5700 3700 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf" H 5700 3700 50  0001 C CNN
@@ -110,10 +111,10 @@ BLUE_CURRENT
 Wire Wire Line
 	4650 4600 4850 4600
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R6
 U 1 1 5E497F57
 P 4950 4600
-F 0 "R?" V 4850 4600 50  0000 C CNN
+F 0 "R6" V 4850 4600 50  0000 C CNN
 F 1 "1M" V 5050 4600 50  0000 C CNN
 F 2 "" H 4950 4600 50  0001 C CNN
 F 3 "~" H 4950 4600 50  0001 C CNN
@@ -126,8 +127,8 @@ U 1 1 5E497F5D
 P 5700 4700
 AR Path="/5E497F5D" Ref="U?"  Part="1" 
 AR Path="/5E40D9B5/5E497F5D" Ref="U?"  Part="1" 
-AR Path="/5E46A20A/5E497F5D" Ref="U?"  Part="1" 
-F 0 "U?" H 5750 4550 50  0000 C CNN
+AR Path="/5E46A20A/5E497F5D" Ref="U3"  Part="1" 
+F 0 "U3" H 5750 4550 50  0000 C CNN
 F 1 "LMC6484" H 5850 4850 50  0000 C CNN
 F 2 "" H 5700 4700 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf" H 5700 4700 50  0001 C CNN
