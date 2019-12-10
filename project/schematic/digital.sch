@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:final_project_schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -23,8 +24,8 @@ L 74xx:74LS00 U?
 U 1 1 5E4B9683
 P 5000 4350
 AR Path="/5E4B9683" Ref="U?"  Part="1" 
-AR Path="/5E4B412B/5E4B9683" Ref="U?"  Part="1" 
-F 0 "U?" H 5000 4675 50  0000 C CNN
+AR Path="/5E4B412B/5E4B9683" Ref="U13"  Part="1" 
+F 0 "U13" H 5000 4675 50  0000 C CNN
 F 1 "74LS00" H 5000 4584 50  0000 C CNN
 F 2 "" H 5000 4350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 5000 4350 50  0001 C CNN
@@ -58,8 +59,8 @@ L 74xx:74LS00 U?
 U 1 1 5E4B9695
 P 5800 3050
 AR Path="/5E4B9695" Ref="U?"  Part="1" 
-AR Path="/5E4B412B/5E4B9695" Ref="U?"  Part="1" 
-F 0 "U?" H 5800 3375 50  0000 C CNN
+AR Path="/5E4B412B/5E4B9695" Ref="U14"  Part="1" 
+F 0 "U14" H 5800 3375 50  0000 C CNN
 F 1 "74LS00" H 5800 3284 50  0000 C CNN
 F 2 "" H 5800 3050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 5800 3050 50  0001 C CNN
@@ -73,8 +74,8 @@ L 74xx:74LS00 U?
 U 1 1 5E4B969C
 P 4850 3050
 AR Path="/5E4B969C" Ref="U?"  Part="1" 
-AR Path="/5E4B412B/5E4B969C" Ref="U?"  Part="1" 
-F 0 "U?" H 4850 3375 50  0000 C CNN
+AR Path="/5E4B412B/5E4B969C" Ref="U12"  Part="1" 
+F 0 "U12" H 4850 3375 50  0000 C CNN
 F 1 "74LS00" H 4850 3284 50  0000 C CNN
 F 2 "" H 4850 3050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 4850 3050 50  0001 C CNN
@@ -86,8 +87,8 @@ L 74xx:74LS00 U?
 U 1 1 5E4B96A3
 P 3850 4350
 AR Path="/5E4B96A3" Ref="U?"  Part="1" 
-AR Path="/5E4B412B/5E4B96A3" Ref="U?"  Part="1" 
-F 0 "U?" H 3850 4675 50  0000 C CNN
+AR Path="/5E4B412B/5E4B96A3" Ref="U11"  Part="1" 
+F 0 "U11" H 3850 4675 50  0000 C CNN
 F 1 "74LS00" H 3850 4584 50  0000 C CNN
 F 2 "" H 3850 4350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 3850 4350 50  0001 C CNN

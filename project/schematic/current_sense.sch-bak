@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:final_project_schematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 3 4
+Sheet 2 4
 Title "RGB Color Sense Circuit"
 Date "2019-12-08"
 Rev "B"
